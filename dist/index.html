@@ -1,0 +1,373 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      HabitVerse — Your Partner in Self-Growth – Redefining Personal Growth, One
+      Habit at a Time
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="navbar glass">
+      <div class="brand">
+        <a href="#home"
+          ><img src="{% static 'logo.png' %}" alt="HabitVerse"
+        /></a>
+        <span>HabitVerse</span>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#stories">Stories</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </header>
+
+    <!-- MOBILE MENU PANEL -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-btn" id="closeMenu">✕</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#stories">Stories</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- BANNER SECTION -->
+    <section class="banner-img-section" id="home">
+      <img src="{% static 'banner.jpg' %}" alt="Healthy lifestyle" />
+    </section>
+
+    <!-- 1. HERO -->
+    <section class="hero">
+      <div class="hero-card glass">
+        <h1>Motivation Fades. Habits Last.</h1>
+        <p>
+          Stop the cycle of starting and stopping. Build consistent habits that
+          stick—without the burnout and without the pressure. We help you take
+          small, science-backed steps towards a life of confidence and calm.
+        </p>
+        <a class="btn" href="#features">Start Your Journey</a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL WITH IMAGE OVERLAY -->
+    <section class="section soft-bg" id="about">
+      <h2 class="title">Built from Resilience</h2>
+
+      <div class="testimonial-overlay-card">
+        <div class="testimonial-img">
+          <img src="{% static 'ns.jpg' %}" alt="User photo" />
+          <div class="img-overlay"></div>
+        </div>
+
+        <div class="testimonial-info glass">
+          <p>
+            Hi, I’m <strong> Narthana Sharan </strong>, Founder of HabitVerse.
+          </p>
+          <p>
+            I didn't build this platform because I had a perfect routine. I
+            built it because I needed an anchor to navigate life's
+            uncertainties.
+          </p>
+          <p>
+            I learned that pushing through exhaustion doesn't work. The secret
+            isn't willpower; it's systematic consistency.
+          </p>
+          <p>
+            HabitVerse is the support system I created to help you grow—not by
+            doing more, but by taking one small, gentle step at a time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FEATURES -->
+    <section id="features" class="section">
+      <h2 class="title">Why HabitVerse ?</h2>
+      <div class="features">
+        <div class="feature glass">
+          <h3>Human-First</h3>
+          <p>Accountability with empathy, not algorithms.</p>
+        </div>
+        <div class="feature glass">
+          <h3>Gentle Consistency</h3>
+          <p>We celebrate showing up, even imperfectly.</p>
+        </div>
+        <div class="feature glass">
+          <h3>Deep Rest</h3>
+          <p>We teach you to rest without quitting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHALLENGES SECTION -->
+    <section class="section challenges soft-bg" id="challenges">
+      <div class="container">
+        <h2 class="title">Choose Your Challenge</h2>
+        <div class="challenge-grid">
+          <!-- CARD 1 -->
+          <div class="challenge-card glass">
+            <span class="tag">Fitness & Movement</span>
+            <h3>21-Day Fitness Challenge</h3>
+            <p>
+              Build a movement routine that energizes you instead of exhausting
+              you. Perfect for beginners or restarting after a break.
+            </p>
+
+            <div class="meta">
+              <span>⏱ 21 Days</span>
+              <strong>₹200</strong>
+            </div>
+
+            <a
+              href="https://wa.me/919790563993?text=Hi!%20I%27d%20like%20to%20join%20the%2021-Day%20Fitness%20Challenge.%20Could%20you%20help%20me%20get%20started%3F"
+              target="_blank"
+              class="btn"
+            >
+              Join Now
+            </a>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="challenge-card glass">
+            <span class="tag">Focus & Clarity</span>
+            <h3>21-Day Digital Detox</h3>
+            <p>
+              Reclaim your time from the screen. Break the scroll loop and find
+              your mental clarity again.
+            </p>
+
+            <div class="meta">
+              <span>⏱ 21 Days</span>
+              <strong>₹250</strong>
+            </div>
+
+            <a
+              href="https://wa.me/919790563993?text=Hi!%20I%27d%20like%20to%20join%20the%2021-Day%20Digital%20Detox.%20Could%20you%20help%20me%20get%20started%3F"
+              target="_blank"
+              class="btn"
+            >
+              Join Now
+            </a>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="challenge-card glass">
+            <span class="tag">Mindset Shift</span>
+            <h3>28-Day Gratitude Challenge</h3>
+            <p>
+              Rewire your brain for positivity. A gentle daily practice to lower
+              stress and find joy in the little things.
+            </p>
+
+            <div class="meta">
+              <span>⏱ 28 Days</span>
+              <strong>₹200</strong>
+            </div>
+
+            <a
+              href="https://wa.me/919790563993?text=Hi!%20I%27d%20like%20to%20join%20the%2028-Day%20Gratitude%20Challenge.%20Could%20you%20help%20me%20get%20started%3F"
+              target="_blank"
+              class="btn"
+            >
+              Join Now
+            </a>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="challenge-card glass">
+            <span class="tag">Personal Growth</span>
+            <h3>Build Your Own Habit</h3>
+            <p>
+              You pick the goal (reading, water, waking up early), and we
+              provide the accountability frame to make it stick.
+            </p>
+
+            <div class="meta">
+              <span>⏱ 21 Days</span>
+              <strong>₹200</strong>
+            </div>
+
+            <a
+              href="https://wa.me/919790563993?text=Hi!%20I%27d%20like%20to%20join%20the%20Build%20Your%20Own%20Habit%20challenge.%20Could%20you%20help%20me%20get%20started%3F"
+              target="_blank"
+              class="btn"
+            >
+              Join Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES -->
+    <section id="services" class="section">
+      <h2 class="title">How It Works</h2>
+      <div class="features">
+        <div class="feature glass">
+          <h3>Join a Challenge</h3>
+          <p>Pick the habit you want to build.</p>
+        </div>
+        <div class="feature glass">
+          <h3>Get Daily Support</h3>
+          <p>Receive small, manageable reminders via WhatsApp.</p>
+        </div>
+        <div class="feature glass">
+          <h3>See the Change</h3>
+          <p>We track your streaks and you feel the confidence grow.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials soft-bg" id="stories">
+      <div class="container">
+        <h2 class="title">Real Stories</h2>
+        <div class="testimonial-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass">
+            <!-- <div class="t-img">
+         <img src="" alt="Aishwarya">
+        </div>-->
+            <div class="t-content">
+              <p>
+                “Honestly, I was done. Couldn’t keep up with anything.
+                HabitVerse didn’t pressure me, just helped me start small again.
+                It felt easy, like okay… I can do this. Those tiny notes they
+                send really made me think different about progress. And how
+                would I miss taking part in a start-up that my friend initiated!
+                But the benefits I had were super cool and unexpected.”
+              </p>
+              <h4>Aishwarya</h4>
+              <span>Professor, Chennai</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass">
+            <!-- <div class="t-img">
+          <img src="" alt="Subashree"> 
+        </div>-->
+            <div class="t-content">
+              <p>
+                “I’ve always been consistent with Duolingo, but when lessons got
+                tough, I’d lose interest 😩. Just to keep my streak alive, I’d
+                do the easiest, random lessons — but I wasn’t growing. Then my
+                friend started HabitVerse, and her systems helped me get past
+                that ‘stuck’ phase. Now I’m on a 385-day streak — but this time
+                it’s meaningful.”
+              </p>
+              <h4>Subashree</h4>
+              <span>App Tester, Belgium</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass">
+            <!-- <div class="t-img">
+          <img src=""  alt="Yamini"> 
+        </div>-->
+            <div class="t-content">
+              <p>
+                “The Habit Verse has been extremely helpful in teaching me to be
+                more patient and kind with children. The daily updates and
+                follow-ups really supported me in staying consistent. The best
+                part is choosing our own habit — it makes everything personal
+                and meaningful. A special thanks to Narthana for her
+                encouragement and thoughtful reminders.”
+              </p>
+              <h4>Yamini</h4>
+              <span>Maths Teacher, Kerala</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="title">Get in Touch</h2>
+      <form class="contact-form glass">
+        <h2>
+          Email -
+          <a href="mailto:wearehabitnauts@gmail.com" style="color: black"
+            >wearehabitnauts@gmail.com</a
+          >
+        </h2>
+        <h2>
+          Phone -
+          <a href="tel:+919790563993" style="color: black"> +91 9790563993 </a>
+        </h2>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer glass">
+      <div class="footer-grid">
+        <div>
+          <h4>HabitVerse</h4>
+          <p>Anchor Yourself. Orbit your goals</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="privacy-policy/">Privay Policy</a>
+          <a href="#contact">Contact</a>
+          <a href="terms/">Terms & Conditions</a>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <a
+            href="https://www.instagram.com/wearehabitnauts"
+            target="_blank"
+            class="social-link insta-color"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+      <p class="copy">
+        © <span id="year"></span> HabitVerse — Designed with calm ✨
+      </p>
+    </footer>
+    <script>
+      const openBtn = document.getElementById("menuToggle");
+      const closeBtn = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuLinks = mobileMenu.querySelectorAll("nav a");
+
+      // Open menu
+      openBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+      });
+
+      // Close menu
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+      });
+
+      // Close menu when any link is clicked
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
