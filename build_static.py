@@ -31,9 +31,14 @@ def build():
                 content = f.read()
             
             # Sub variables
+            import re
             content = content.replace('{{ phone_number }}', phone_number)
             content = content.replace('{{ display_phone }}', display_phone)
-            # Fix static paths to be relative for Netlify
+            # Remove Django load static
+            content = re.sub(r'\{%\s*load\s+static\s*%\}', '', content)
+            # Replace Django static tags with relative paths
+            content = re.sub(r'\{%\s*static\s+[\'\"]([^\'\"]+)[\'\"]\s*%\}', r'./static/\1', content)
+            # Fallback for previous replacement
             content = content.replace('../static/', './static/')
             
             out_dir = os.path.join(DIST_DIR, out)
