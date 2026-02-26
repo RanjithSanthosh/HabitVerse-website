@@ -1,0 +1,10 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>WhatsApp Messages</h2>
+{% for msg in messages %}
+<p><b>{{ msg.phone_number }}</b>: {{ msg.message }}</p>
+{% endfor %}
+</body>
+</html>
