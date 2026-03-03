@@ -18,7 +18,7 @@ def terms(request):
 
 def index(request):
     context = {
-        'phone_number': '919790563993',
-        'display_phone': '+91 9790563993'
+        'phone_number': '918807959339',
+        'display_phone': '+91 8807959339'
     }
     return render(request, "home.html", context)

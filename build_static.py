@@ -7,8 +7,8 @@ def build():
     STATIC_DIR = os.path.join(BASE_DIR, 'static')
     DIST_DIR = os.path.join(BASE_DIR, 'dist')
 
-    phone_number = "919790563993"
-    display_phone = "+91 9790563993"
+    phone_number = "918807959339"
+    display_phone = "+91 8807959339"
 
     if os.path.exists(DIST_DIR):
         shutil.rmtree(DIST_DIR)
